@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testing</title>
+    <style>form {text-align: center;}</style>
+
+</head>
+    <body style="background-image: linear-gradient(90deg,white,bisque,Sienna); margin-top:10%;">
+        <div style="text-align:center; margin-left:350px; margin-right:350px; background-color:BurlyWood; border-radius:20px">
+            <br>
+            <h2 style="text-align: center;">Sentence Similarity Calculator</h2>
+            <p style="text-align: center;">
+                Enter two sentences to get the similarity score between them
+            </p>
+            <p>
+            <form method="post" action="/">
+                <input type="text" name = "Sentence1" placeholder="First Sentence">
+                <input type="text" name = "Sentence2" placeholder="Second Sentence">
+                <br>
+                <br>
+                <input type="submit" value="Go!">
+            </form>
+            <div style="text-align:center; margin-left:180px; margin-right:180px; background-color:LimeGreen;" id="demobox">
+                <h4 style="color:white;">Similarity score : {{out}}</h4>
+            </div>
+<!--            </p>-->
+<!--            <p>Similarity score is : {{out}}</p>-->
+<!--            <br>-->
+            <div style="text-align:center;">
+            <a href="/">Reload</a>
+            </div>
+            <br>
+        </div>
+        <h6 style="text-align: center;">By Gaurav Sharma</h6>
+    </body>
+</html>
